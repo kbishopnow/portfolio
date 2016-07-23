@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Keith Bishop Profile">
+    <meta name="author" content="Keith Bishop">
+    <title>Keith Bishop Profile</title>
+	<link href="folio.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	$( document ).ready(function() {
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+				});
+			} // End if
+		});
+    });	
+	</script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Keith Bishop</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>       
+            <li><a href="#about">About</a></li>
+            <li><a href="#folio">Portfolio</a></li>        
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div><!--/.navbar -->
+	<div id="content">		
+		<!-- topPage -->
+		<div class="container-fluid" id="home">
+			<div class="img-container">
+				<img src="keith.png" alt="Hi, i'm Keith Bishop. A web developer.">
+			</div>
+		</div>
+		<!-- aboutPage -->
+		<div class="container" id="about">
+			<br /><br /><br />
+			<p class="text-center myRed">About</p>
+			<br />
+			<h1 class="text-center">No, I am not the Denver Bronco guard that keeps showing up when you "Google" me.</h1>
+			<br /><br /><br /><br /><br />
+			<div class="col-sm-6">
+				<h3>But... you will find me in Dwell Magazine if your "Google-Fu" is strong.</h3>
+				<br /><br />
+				<h3>To the facts!</h3>
+				<ul>
+					<li><h4>Mostly self taught</h4></li>
+					<li><h4>Started learning in 2009</h4></li>
+					<li><h4>Began coding at work in 2015</h4></li>
+					<li><h4>Love Visual Studio, C#, JavaScript, & cycling.</h4></li>
+					<li><h4>Hate PHP, eggs, & going to bed before dark.</h4></li>
+					<li><h4>Bachelor of General Studies: FHSU (Go Tigers!)</h4></li>
+					<li><h4>Minor in Web Development</h4></li>
+					<li><h4>Associates in Electronic Engineering / Computer Communications: HCC</h4></li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<img class="img-responsive" src="keithMelissaDwell.jpg" alt="Just an old photo of me.">
+				<div class="desc">
+					<p class="desc_content">Photo by Jake Stangel for Dwell.</p>
+				</div>
+			</div>			
+		</div>
+		<!-- folioPage -->
+		<div class="container" id="folio">
+			<br /><br /><br />
+			<p class="text-center myRed">Portfolio</p>
+			<br /><br />
+			<div class="col-sm-4">
+				<div class="card dark">
+					<img class="card-img-top img-responsive" src="bidvoice.png" alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">BidVoice</h4>
+						<p class="card-text">It makes your invoicing fast & easy. Our goal is to help you get paid faster. It's as simple as that.</p>
+						<a href="https://bidvoice.co" target="_blank" class="btn btn-danger">Visit</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card dark">
+					<img class="card-img-top img-responsive" src="mmaweb.png" alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">MMAweb</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-danger">Info</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card dark">
+					<img class="card-img-top img-responsive" src="fpy.png" alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">First Pass Yield / TAKT</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-danger">Info</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card dark">
+					<img class="card-img-top img-responsive" src="github.png" alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">GitHub</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-danger">Profile</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card dark">
+					<img class="card-img-top img-responsive" src="codepen.png" alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">CodePen</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-danger">Profile</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card dark">
+					<img class="card-img-top img-responsive" src="codecamp.png" alt="Card image cap">
+					<div class="card-block">
+						<h4 class="card-title">freeCodeCamp</h4>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-danger">Profile</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- contactPage -->
+		<div class="container" id="contact">
+			<br /><br /><br />
+			<p class="text-center myRed">Contact</p>
+			<br />
+			<h1 class="text-center">I would love to hear from you, so why not reach out to me via the methods below?</h1>
+			<br /><br /><br /><br />
+			<div class="col-sm-6">
+				<img class="img-responsive" src="meCouch.png" alt="Another pic of me sitting on a couch.">
+			</div>
+			<div class="col-sm-6">
+				<div class="col-sm-3">
+					<a href="https://www.linkedin.com/in/kbtoday" target="_blank"><img class="img-responsive img-small" src="linkedInLogo.png" alt="Connect with me on LinkedIn"></a>
+				</div>
+				<div class="col-sm-3">
+					<img class="img-responsive img-small" src="githubIcon.png" alt="Find me on GitHub">
+				</div>
+				<div class="col-sm-3">
+					<img class="img-responsive img-small" src="codepenIcon.png" alt="See my stuff at CodePen">
+				</div>
+				<div class="col-sm-3">
+					<a href="javascript:window.location.href = 'mailto:' + ['kbishop.now','gmail.com'].join('@')"><img class="img-responsive img-small" src="mialIcon.png" alt="Send me a message"></a>
+				</div>
+				<br style="clear:both;" /><br /><br /><br /><br /><br />
+				<h3 class="text-center">To finish on a high note...</h3>
+				<blockquote>
+					<p>In order to carry a positive action, we must develop here a positive vision.</p>
+					<footer>Dalai Lama</footer>
+				</blockquote>
+				<br /><br /><br />
+				<p class="text-center myRed">The End</p>
+			</div>			
+		</div>
+	</div>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>

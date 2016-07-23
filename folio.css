@@ -1,0 +1,84 @@
+#content {
+	background-color: #f8f8f8;
+}
+.navbar {
+	font-family: Monospace;
+	font-size: 1.2em;
+}
+
+.navbar-inverse {
+	border-color: darkred  !important;
+}
+
+#home, #about, #folio, #contact {
+	min-height: 100vh;
+}
+
+#home {
+	background-color: #333;
+}
+
+#about {
+	
+}
+
+#folio {
+	
+}
+
+#contact {
+	
+}
+
+#contact .img-small {
+	margin: 0 auto 1em auto;
+	border: 1px solid #980707;
+	padding: .5em;
+	box-shadow: 0 1px 2px #ccc;
+}
+
+#contact .img-small:hover {
+	border: 1px solid #444;
+	box-shadow: 0 1px 2px #fff;
+}
+
+.myRed {
+	color: #980707;
+	font-family: Monospace;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; /* add */
+    justify-content: center; /* add to align horizontal */
+    align-items: center; /* add to align vertical */
+}
+
+.img-container img {
+	width: 50%;
+	min-width: 280px;
+}
+
+div.desc{
+    background-color: transparent;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    width: 90%;
+	margin-left: 5%;
+	text-align: center;
+}
+
+.dark {
+	background-color: #777;
+	color: #f8f8f8;
+	padding: 1em;
+	border-radius: 2px;
+	margin: 1.5em 0;
+}
